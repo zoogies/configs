@@ -13,11 +13,14 @@ sudo apt install brave-browser
 sudo snap remove firefox
 
 # Install required packages and software
-sudo apt install gcc make libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libjansson-dev gdb valgrind cloc
+sudo apt install gcc make libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libjansson-dev gdb valgrind cloc virt-manager qemu-kvm
 sudo snap install code --classic
 sudo snap install spotify
 sudo snap install discord
 sudo snap install steam
+
+# add self to libvirt group
+sudo usermod -aG libvirt $(whoami)
 
 # Install Neofetch and add to ~/.bashrc
 sudo apt install neofetch
@@ -27,4 +30,7 @@ echo "neofetch" >> ~/.bashrc
 git config --global user.email "ryanzmuda@gmail.com"
 git config --global user.name "ryan zmuda"
 
-echo "Setup completed!"
+echo "Setup completed! Restarting..."
+
+# Restart
+sudo reboot
