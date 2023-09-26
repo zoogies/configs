@@ -13,7 +13,7 @@ sudo apt install brave-browser
 sudo snap remove firefox
 
 # Install required packages and software
-sudo apt install gcc make libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libjansson-dev gdb valgrind cloc virt-manager qemu-kvm htop btop
+sudo apt install gcc make libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libjansson-dev gdb valgrind cloc virt-manager qemu-kvm htop btop audacity
 sudo snap install code --classic
 sudo snap install spotify
 sudo snap install discord
